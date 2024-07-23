@@ -10,8 +10,8 @@ export const MovieList = ({apiPath}) => {
             <section className="max-w-7xl mx-auto py-7">
                 <div className="flex justify-start flex-wrap w-full">
                     {
-                        movies.map((movies)=>(
-                            <Card key={movies.id}  movies={movies}/>
+                        movies.map((data)=>(
+                            <Card key={data.id}  movies={data}/>
                         ))
                     }
                 </div>

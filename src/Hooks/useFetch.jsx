@@ -8,8 +8,7 @@ export const useFetch = (apiPath,queryTerm="") => {
 
    const url =`${process.env.REACT_APP_BASE_URL}/${apiPath}?api_key=${process.env.REACT_APP_API_KEY}&query=${queryTerm}`
 
-   console.log("url",url)
-
+   console.log("Url : ",url);
     const fetchMovies = async () => {
         try {
           const response = await axios.get(url);
